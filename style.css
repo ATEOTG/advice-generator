@@ -1,0 +1,29 @@
+/* 
+
+Font size (quote): 28px
+
+*/
+:root {
+  --cyan-light: hsl(193, 38%, 86%);
+  --green-neon: hsl(150, 100%, 66%);
+  --blue-gry: hsl(217, 19%, 38%);
+  --blue-drk-gry: hsl(217, 19%, 24%);
+  --blue-drk: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+}
