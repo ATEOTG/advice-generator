@@ -23,28 +23,67 @@ html {
 
 body {
   font-size: 2.8rem;
+  height: 90vh;
   font-family: "Manrope", sans-serif;
   background-color: var(--blue-drk);
 }
 
 .container {
-  /* display: flex;
+  height: inherit;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 95%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-color: var(--blue-drk-gry);
+  border-radius: 2rem;
+  z-index: -10;
 }
 
 .main-content {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  gap: 3rem;
 }
 
 .sub {
   color: var(--green-neon);
+  font-size: 1.1rem;
+  letter-spacing: 0.346rem;
 }
 
 .primary-heading {
   color: var(--cyan-light);
+  font-size: 2.4rem;
+  text-align: center;
+  width: 83%;
+}
+
+.circle {
+  background-color: var(--green-neon);
+  border-radius: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(230%, 50%);
+  z-index: -1;
+}
+
+.dice {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(695%, 50%);
+  z-index: 999;
 }
