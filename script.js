@@ -7,7 +7,9 @@ const dice = document.querySelector(".dice");
 let windowWidth = window.innerWidth;
 const runAdvice = async function () {
   try {
-    const res = await fetch("https://api.adviceslip.com/advice");
+    const res = await fetch("https://api.adviceslip.com/advice", {
+      cache: "no-cache",
+    });
     const { slip } = await res.json();
     // Want to generate the html fitted to the advice we retrieved
     const html = `
