@@ -4,6 +4,7 @@ const parentEl = document.querySelector(".text");
 const circle = document.querySelector(".circle");
 const dice = document.querySelector(".dice");
 
+let windowWidth = window.innerWidth;
 const runAdvice = async function () {
   try {
     const res = await fetch("https://api.adviceslip.com/advice");
@@ -28,9 +29,32 @@ circle.addEventListener("click", runAdvice);
 dice.addEventListener("click", runAdvice);
 
 // event for mouse over/hover
-dice.addEventListener("mouseover", function () {
-  circle.classList.add("glow");
+window.addEventListener("resize", function () {
+  windowWidth = window.innerWidth;
+  console.log(windowWidth);
+  if (windowWidth >= 800) {
+    dice.addEventListener("mouseover", function () {
+      circle.classList.add("glow");
+    });
+    dice.addEventListener("mouseout", function () {
+      circle.classList.remove("glow");
+    });
+  } else {
+    dice.addEventListener("mouseover", function () {
+      circle.classList.remove("glow");
+    });
+  }
 });
-dice.addEventListener("mouseout", function () {
-  circle.classList.remove("glow");
+
+window.addEventListener("load", function () {
+  if (windowWidth > 800) {
+    dice.addEventListener("mouseover", function () {
+      circle.classList.add("glow");
+    });
+    dice.addEventListener("mouseout", function () {
+      circle.classList.remove("glow");
+    });
+  } else {
+    circle.classList.remove("glow");
+  }
 });
