@@ -22,8 +22,29 @@ html {
 }
 
 body {
+  font-size: 2.8rem;
   font-family: "Manrope", sans-serif;
+  background-color: var(--blue-drk);
 }
 
 .container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 95%;
+  margin: 0 auto;
+  background-color: var(--blue-drk-gry);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub {
+  color: var(--green-neon);
+}
+
+.primary-heading {
+  color: var(--cyan-light);
 }
