@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 1.5em;
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
   gap: 3rem;
 }
 
@@ -68,6 +68,10 @@ body {
   width: 83%;
 }
 
+.dice-box {
+  position: relative;
+}
+
 .circle {
   background-color: var(--green-neon);
   border-radius: 50%;
@@ -76,7 +80,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(230%, 50%);
+  transform: translate(-45%, 120%);
   z-index: -1;
 }
 
@@ -84,6 +88,6 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(695%, 50%);
+  transform: translate(-40%, 240%);
   z-index: 999;
 }
