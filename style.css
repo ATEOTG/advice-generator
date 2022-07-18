@@ -102,7 +102,7 @@ body {
 /* 800px */
 @media (min-width: 50em) {
   .box {
-    width: 37.5%;
+    width: 60%;
   }
 
   .sub {
@@ -126,4 +126,32 @@ body {
   .dice:hover {
     cursor: pointer;
   }
+}
+/* 1250px */
+@media (min-width: 78em) {
+  .box {
+    width: 37.5%;
+  }
+
+  /* .sub {
+    color: var(--green-neon);
+    font-size: 1.3rem;
+    letter-spacing: 0.546rem;
+  }
+
+  .divider-mobile {
+    display: none;
+  }
+
+  .divider-desktop {
+    display: block;
+  }
+
+  .circle:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 2.5rem rgba(82, 255, 169, 0.705);
+  }
+  .dice:hover {
+    cursor: pointer;
+  } */
 }

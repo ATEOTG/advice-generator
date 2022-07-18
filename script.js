@@ -23,6 +23,14 @@ const runAdvice = async function () {
     console.error(err);
   }
 };
-
+// Event for click
 circle.addEventListener("click", runAdvice);
 dice.addEventListener("click", runAdvice);
+
+// event for mouse over/hover
+dice.addEventListener("mouseover", function () {
+  circle.classList.add("glow");
+});
+dice.addEventListener("mouseout", function () {
+  circle.classList.remove("glow");
+});
